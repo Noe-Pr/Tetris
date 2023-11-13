@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+body {
+    margin: 0;
+    background: #121212; /* Fond de la page */
+}
+
+/* Styles pour la page d'accueil */
+body.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: #121212; /* Fond de la page d'accueil */
+}
+
+main {
+    display: flex;
+    flex-direction: row; /* Aligner les blocs horizontalement */
+    align-items: stretch; /* Pour que tous les blocs aient la même hauteur */
+    justify-content: space-between; /* Espacement égal entre les blocs */
+    width: 80%;
+    padding: 20px;
+    background: #121212; /* Fond des sections */
+}
+
+/* Style pour le titre */
+.title {
+    font-size: 60px;
+    color: #ffffff;
+    margin: 10px 0; /* Ajout d'une marge pour l'espacement */
+}
+
+/* Style pour le titre dans le conteneur parent */
+.header-title {
+    text-align: center; /* Centre le titre horizontalement */
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10px; /* Ajout d'une marge pour l'espacement */
+}
+
+/* Styles pour les blocs */
+.description, .features, .difficulty-selection {
+    flex: 1; /* Chaque bloc prend une part égale de l'espace disponible */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles pour les boutons */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.buttons button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #111;
+    transition: background-color 0.3s;
+    border: none;
+    width: 140px;
+    color: #fff;
+}
+
+.buttons button:hover {
+    background-color: #000;
+}
+
+/* Styles pour la page du jeu */
+.gamepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: #121212; /* Fond de la page du jeu */
+}
+
+#game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 20px;
+}
+
+canvas {
+    background: #000;
+    border: 1px solid white;
+}
+
+#score-display, #pause-button, #quit-button, #restart-button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#score-display {
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
+#pause-button {
+    font-size: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #111; /* Couleur de fond des boutons */
+    color: #fff;
+    transition: background-color 0.3s;
+    border-style: solid;
+    width: 170px;
+}
+
+#quit-button {
+    font-size: 24px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #111; /* Couleur de fond des boutons */
+    color: #fff;
+    transition: background-color 0.3s;
+    border-style: solid;
+    width: 170px;
+}
+
+#restart-button {
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #111; /* Couleur de fond des boutons */
+    color: #fff;
+    transition: background-color 0.3s;
+    border-style: solid;
+    width: 170px;
+}
+
+#pause-button:hover, #quit-button:hover, #restart-button:hover {
+    background-color: #000;
+}
+
+#button-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px 35px;
+    border-radius: 10px;
+    margin: 30px;
+}

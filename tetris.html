@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tetris</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="logo.png" sizes="16x16" type="image/png">
+</head>
+<body class="gamepage">
+  <div id="game-container">
+    <canvas width="320" height="640" id="game"></canvas>
+    <div id="button-container">
+      <div id="score-display">Score : 0</div>
+      <div>
+        <button id="pause-button">Pause</button>
+      </div>
+      <div>
+        <button id="quit-button">Quitter</button>
+      </div>
+      <div id="restart-button-container" style="display: none;">
+        <button id="restart-button">Recommencer</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
